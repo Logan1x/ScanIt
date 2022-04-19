@@ -8,15 +8,19 @@ export default function generate() {
   return (
     <div>
       <Nav />
-      <main>
-        <input
-          type="text"
-          className="border border-gray-400 p-2"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-        />
+      <main className="mt-4 flex min-h-screen flex-col items-center py-2">
+        <h1 className="py02 my-4 text-3xl">Generate QR</h1>
+        <div className="flex flex-col items-center">
+          <input
+            type="text"
+            className="my-2 my-4 rounded border-2 border-gray-400 p-2"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Enter Text/URL Here"
+          />
+        </div>
+
         {text && <QRCode value={text} />}
-        {/* <QRCode value="https://www.google.com" size={256} /> */}
       </main>
     </div>
   )
