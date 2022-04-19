@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { QrReader } from 'react-qr-reader'
 
+import Nav from '../component/Nav'
+
 export default function scanqr() {
   const [qrtext, setQrtext] = useState('')
   console.log(qrtext)
@@ -29,19 +31,22 @@ export default function scanqr() {
 
   return (
     <div>
-      <h1>Scan QR</h1>
-      {validURL(qrtext) ? (
-        <a href={qrtext}>{qrtext}</a>
-      ) : (
-        <p className="text-3xl">{qrtext}</p>
-      )}
-      <div className="mx-auto w-1/2">
-        <QrReader
-          onResult={(result, error) => handleScan(result, error)}
-          constraints={{ facingMode: 'environment' }}
-          style={{ width: '40%', height: '40%' }}
-        />
-      </div>
+      <Nav />
+      <main>
+        <h1>Scan QR</h1>
+        {validURL(qrtext) ? (
+          <a href={qrtext}>{qrtext}</a>
+        ) : (
+          <p className="text-3xl">{qrtext}</p>
+        )}
+        <div className="mx-auto w-1/2">
+          <QrReader
+            onResult={(result, error) => handleScan(result, error)}
+            constraints={{ facingMode: 'environment' }}
+            style={{ width: '40%', height: '40%' }}
+          />
+        </div>
+      </main>
     </div>
   )
 }
