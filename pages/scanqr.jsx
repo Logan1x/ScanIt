@@ -33,7 +33,7 @@ export default function scanqr() {
   return (
     <div>
       <Nav />
-      <main className="flex min-h-screen flex-col items-center justify-center py-2 ">
+      <main className="flex min-h-screen flex-col items-center  py-2 ">
         <h1 className="text-3xl ">Scan QR</h1>
         <div>
           {qrtext.length > 0 ? (

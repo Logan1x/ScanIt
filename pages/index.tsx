@@ -10,20 +10,20 @@ const Home: NextPage = () => {
       <Head>
         <title>ScanIt!</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="title" content="ScanIt!"/>
-        <meta name="description" content="Scan and Generate QR codes"/>
+        <meta name="title" content="ScanIt!" />
+        <meta name="description" content="Scan and Generate QR codes" />
 
-        <meta name="og:type" content="website"/>
-        <meta name="og:url" content="https://scan-project.vercel.app/"/>
-        <meta name="og:title" content="ScanIt!"/>
-        <meta name="og:description" content="Scan and Generate QR codes"/>
-        <meta name="og:image" content="https://i.imgur.com/zEWOSe6.png"/>
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://scan-project.vercel.app/" />
+        <meta name="og:title" content="ScanIt!" />
+        <meta name="og:description" content="Scan and Generate QR codes" />
+        <meta name="og:image" content="https://i.imgur.com/zEWOSe6.png" />
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:url" content="https://scan-project.vercel.app/"/>
-        <meta name="twitter:title" content="ScanIt!"/>
-        <meta name="twitter:description" content="Scan and Generate QR codes"/>
-        <meta name="twitter:image" content="https://i.imgur.com/zEWOSe6.png"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://scan-project.vercel.app/" />
+        <meta name="twitter:title" content="ScanIt!" />
+        <meta name="twitter:description" content="Scan and Generate QR codes" />
+        <meta name="twitter:image" content="https://i.imgur.com/zEWOSe6.png" />
       </Head>
 
       <Nav />
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <Link href="/scanqr">
-            <a className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
+            <a className="mt-6 w-full rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600 md:w-96">
               <h3 className="text-2xl font-bold">Scan QR &rarr;</h3>
               <p className="mt-4 text-xl">
                 Scan a QR code to get the data from the QR code.
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           </Link>
 
           <Link href="/generate">
-            <a className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
+            <a className="mt-6 w-full rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600 md:w-96">
               <h3 className="text-2xl font-bold">Generate QR &rarr;</h3>
               <p className="mt-4 text-xl">
                 Generate a QR code with the data you want to store.
