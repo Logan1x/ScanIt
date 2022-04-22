@@ -10,6 +10,20 @@ const Home: NextPage = () => {
       <Head>
         <title>ScanIt!</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="title" content="ScanIt!"/>
+        <meta name="description" content="Scan and Generate QR codes"/>
+
+        <meta name="og:type" content="website"/>
+        <meta name="og:url" content="https://scan-project.vercel.app/"/>
+        <meta name="og:title" content="ScanIt!"/>
+        <meta name="og:description" content="Scan and Generate QR codes"/>
+        <meta name="og:image" content="https://i.imgur.com/zEWOSe6.png"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:url" content="https://scan-project.vercel.app/"/>
+        <meta name="twitter:title" content="ScanIt!"/>
+        <meta name="twitter:description" content="Scan and Generate QR codes"/>
+        <meta name="twitter:image" content="https://i.imgur.com/zEWOSe6.png"/>
       </Head>
 
       <Nav />
