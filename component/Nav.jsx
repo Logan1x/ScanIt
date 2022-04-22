@@ -2,7 +2,10 @@ import Link from 'next/link'
 
 export default function Nav() {
   return (
-    <nav className="my-2 flex w-screen justify-around text-lg font-semibold">
+    <nav
+      className="my-2 flex w-screen justify-around text-lg font-semibold"
+      style={{ width: '100%' }}
+    >
       <div className="flex items-center space-x-1">
         <svg
           className="h-6 w-6"
@@ -23,13 +26,22 @@ export default function Nav() {
         </p>
       </div>
       <div className="flex space-x-2">
-        <p className="cursor-pointer hover:text-blue-600 focus:text-blue-600">
+        <p
+          className="cursor-pointer hover:text-blue-600 focus:text-blue-600"
+          style={{ margin: '0 0.2rem' }}
+        >
           <Link href="/scanqr">Scan</Link>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 focus:text-blue-600">
+        <p
+          className="cursor-pointer hover:text-blue-600 focus:text-blue-600"
+          style={{ margin: '0 0.2rem' }}
+        >
           <Link href="/generate">Generate</Link>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 focus:text-blue-600">
+        <p
+          className="cursor-pointer hover:text-blue-600 focus:text-blue-600"
+          style={{ margin: '0 0.2rem' }}
+        >
           <Link href="https://github.com/logan1x/">Github</Link>
         </p>
       </div>
